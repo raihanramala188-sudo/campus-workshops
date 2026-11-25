@@ -1,0 +1,190 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font: 1rem/1.5 Arial, sans-serif;
+  color: #17282f;
+  background-color: #faf8f6;
+}
+
+.wrap {
+  max-width: 70rem;
+  margin: 0 auto;
+  padding: 1.5rem;
+}
+
+.masthead {
+  background-color: #75003b;
+  color: #ffffff;
+  padding: 2.25rem 0;
+}
+
+.masthead .eyebrow {
+  margin: 0 0 0.5rem;
+  color: #f4d8e6;
+}
+
+.masthead h1 {
+  margin: 0 0 0.85rem;
+  font-size: 2.5rem;
+  line-height: 1.15;
+}
+
+nav {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.masthead nav a {
+  color: #ffffff;
+}
+
+a {
+  color: #75003b;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+summary:focus-visible {
+  outline: 3px solid #75003b;
+  outline-offset: 2px;
+}
+
+h2 {
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  font-size: 1.5rem;
+}
+
+.subpage h1 {
+  margin: 0.5rem 0 0.75rem;
+  font-size: 2.25rem;
+  line-height: 1.2;
+}
+
+.catalog {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.5rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 800px) {
+  .catalog {
+    grid-template-columns: 1fr;
+  }
+}
+
+.workshop {
+  background-color: #ffffff;
+  border: 1px solid #dfd7d2;
+  border-top: 3px solid #75003b;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.topic {
+  margin: 0 0 0.5rem;
+  font-weight: 700;
+  color: #75003b;
+}
+
+.workshop h3 {
+  margin: 0.25rem 0 0.6rem;
+  font-size: 1.25rem;
+}
+
+.meta {
+  margin: 0 0 0.85rem;
+  color: #374151;
+}
+
+.card-link {
+  margin-top: auto;
+  padding-top: 0.75rem;
+}
+
+.desk-info {
+  margin: 1rem 0;
+}
+
+details {
+  margin: 0.75rem 0 1.5rem;
+}
+
+summary {
+  cursor: pointer;
+}
+
+.field {
+  margin-bottom: 1rem;
+}
+
+.field label {
+  display: block;
+  font-weight: 700;
+  margin-bottom: 0.35rem;
+}
+
+.field input,
+.field select,
+.field textarea {
+  width: 100%;
+  max-width: 34rem;
+  padding: 0.55rem 0.65rem;
+  font: inherit;
+  color: #17282f;
+  background-color: #ffffff;
+  border: 1px solid #6b7280;
+  border-radius: 2px;
+}
+
+.btn {
+  padding: 0.6rem 1.1rem;
+  font: inherit;
+  color: #ffffff;
+  background-color: #75003b;
+  border: 1px solid #530029;
+  border-radius: 2px;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #5c002e;
+}
+
+#checked { display: none; }
+#checked:target { display: block; font-weight: bold; }
+
+.contact-form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 36rem;
+  margin-block: 1rem;
+}
+.contact-form label { font-weight: bold; }
+.contact-form input, .contact-form select, .contact-form textarea {
+  width: 100%;
+  padding: 0.55rem;
+  font: inherit;
+}
+.contact-form button {
+  justify-self: start;
+  padding: 0.55rem 1rem;
+  font: inherit;
+  color: white;
+  background: #75003b;
+}
+.contact-form :focus-visible {
+  outline: 3px solid #0056a2;
+  outline-offset: 2px;
+}

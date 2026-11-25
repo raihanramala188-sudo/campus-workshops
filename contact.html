@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact | Campus Workshops</title>
+  <link rel="stylesheet" href="css/site.css">
+</head>
+<body>
+<main class="wrap">
+  <nav aria-label="Main navigation">
+    <a href="index.html#workshops">Back to the catalog</a>
+  </nav>
+
+  <h1>Contact the workshop desk</h1>
+  <p>Ask the desk about rooms, accessibility or workshop materials.</p>
+
+  <address>
+    Student Services Desk, Main Building, Room A01<br>
+    <a href="mailto:workshops@example.org">workshops@example.org</a>
+  </address>
+
+  <h2>Common questions</h2>
+  <details>
+    <summary>Where can I find the room?</summary>
+    <p>The room appears beside the date on each workshop page.</p>
+  </details>
+
+  <h2>Practice contact request</h2>
+  <p>Use invented details. Every field is required. This local exercise checks your entries without sending a message.</p>
+
+  <form class="contact-form" action="contact.html#checked" method="get">
+    <label for="visitor">Your name</label>
+    <input id="visitor" name="visitor" type="text" required>
+
+    <label for="reply">Email address</label>
+    <input id="reply" name="email" type="email" required>
+
+    <label for="workshop">Workshop</label>
+    <select id="workshop" name="workshop" required>
+      <option value="">Choose a workshop</option>
+      <option value="web-type">Typography for the Web</option>
+      <option value="sensor-stories">Stories from Campus Sensors</option>
+      <option value="accessible-forms">Accessible Sign-up Forms</option>
+    </select>
+
+    <label for="message">Your question (at least 10 characters)</label>
+    <textarea id="message" name="message" rows="4" minlength="10" required></textarea>
+
+    <button type="submit">Check request</button>
+  </form>
+
+  <p id="checked">Practice complete. Your browser checked the entries. The workshop desk has not received a message.</p>
+</main>
+</body>
+</html>
